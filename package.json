@@ -1,0 +1,14 @@
+{
+  "name": "makabaka1880-blog",
+  "version": "1.0.0",
+  "description": "my own blog",
+  "main": "index.js",
+  "repository": "git@github.com:makabaka1880/makabaka1880.git",
+  "author": "makabaka1880 <makabaka1880@outlook.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "vue": "2.7.16",
+    "vue-server-renderer": "2.7.16"
+  }
+}
