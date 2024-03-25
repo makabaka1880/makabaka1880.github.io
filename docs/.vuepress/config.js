@@ -1,4 +1,12 @@
 module.exports = {
+  head: [
+      ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }]
+  ],
+
+  extendMarkdown: md => {
+      md.set({ breaks: true })
+      md.use(require('markdown-it-katex'))
+  },
   title: 'Makabaka1880\'s Blog',
   description: '欢迎来到我的博客👏',
   themeConfig: {

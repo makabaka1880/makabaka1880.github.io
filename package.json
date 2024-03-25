@@ -8,7 +8,16 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "markdown-it-katex": "^2.0.3",
     "vue": "2.7.16",
     "vue-server-renderer": "2.7.16"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "katex": "^0.16.10",
+    "vuepress-theme-reco": "^1.6.17"
   }
 }

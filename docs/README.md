@@ -7,6 +7,10 @@ footer: MIT Licensed | Copyright 2024 © Sean Li
 ---
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css"/>
+
 <center>
 
 我是一名普普通通的上海初中牲
@@ -16,3 +20,4 @@ footer: MIT Licensed | Copyright 2024 © Sean Li
 之前一只找不到很好的整理方式，正好最近想整个博客，所以也就把所有东西搬上来了
 
 </center>
+$test$
