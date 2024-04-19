@@ -18,8 +18,13 @@ actionLink: /CS/Casio
 Changelog
 ---
 - **域名搬迁** 搬迁至[这里](https://makabaka1880.xyz)
-- **🐛 Bugfix** 修复了因为搬迁后域名(https://makabaka1880.xyz)与`Vssue`注册的`OAuth App`中`Homepage URL`和`Authorization callback URL`冲突的问题
+- **UI更改** 添加BugFix栏
+
+BugFix 
+---
+- **🐛** 修复了因为搬迁后域名(https://makabaka1880.xyz)与`Vssue`注册的`OAuth App`中`Homepage URL`和`Authorization callback URL`(https://makabaka1880.github.io)冲突的问题
   - 评论功能还在测试
+- **🐛** 在`deploy.sh`中添加了写入`CNAME`文件的内容
 :::
 
 <center>

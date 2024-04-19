@@ -11,7 +11,8 @@ cd ~/blog-archiac/
 yarn docs:build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
-
+touch CNAME # Custom Domain
+cat "makabaka1880.xyz" > CNAME # Write custom domain
 git init
 git remote add origin git@github.com:makabaka1880/makabaka1880.github.io.git
 git add -A
