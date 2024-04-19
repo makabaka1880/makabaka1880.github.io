@@ -14,10 +14,12 @@ actionText: 计算机科学 · 卡西欧炸机记 →
 actionLink: /CS/Casio
 ---
 
-::: warning Updated @ Apr 14
+::: warning Updated @ Apr 19
 Changelog
 ---
-- **把Brain Bee这个\*\*\*\*\*\*考完了 🍾🍾🍾🎉🎉🎉**
+- **域名搬迁** 搬迁至[这里](https://makabaka1880.xyz)
+- **🐛 Bugfix** 修复了因为搬迁后域名(https://makabaka1880.xyz)与`Vssue`注册的`OAuth App`中`Homepage URL`和`Authorization callback URL`冲突的问题
+  - 评论功能还在测试
 :::
 
 <center>
