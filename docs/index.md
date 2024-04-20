@@ -24,6 +24,7 @@ Changelog
   - 添加了`Metadata`
 BugFix 
 ---
+- **🐛** 修改了[``sitemap.xml``](https://makabaka1880.xyz/sitemap.xml)中的`hostname`
 - **🐛** 修复了因为搬迁后域名(https://makabaka1880.xyz)与`Vssue`注册的`OAuth App`中`Homepage URL`和`Authorization callback URL`(https://makabaka1880.github.io)冲突的问题
   - 评论功能还在测试
 - **🐛** 在`deploy.sh`中添加了写入`CNAME`文件的内容

@@ -39,7 +39,7 @@ module.exports = {
     'vuepress-plugin-flowchart',
     [
       'sitemap', {
-        hostname: 'https://localhost:8080'
+        hostname: 'https://makabaka1880.xyz'
       },
     ],
     ['graysite',{
