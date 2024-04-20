@@ -14,12 +14,14 @@ actionText: 计算机科学 · 卡西欧炸机记 →
 actionLink: /CS/Casio
 ---
 
-::: warning Updated @ Apr 19
+::: warning Updated @ Apr 20
 Changelog
 ---
 - **域名搬迁** 搬迁至[这里](https://makabaka1880.xyz)
 - **UI更改** 添加BugFix栏
-
+- **添加SEO** 
+  - 添加了`Sitemap`
+  - 添加了`Metadata`
 BugFix 
 ---
 - **🐛** 修复了因为搬迁后域名(https://makabaka1880.xyz)与`Vssue`注册的`OAuth App`中`Homepage URL`和`Authorization callback URL`(https://makabaka1880.github.io)冲突的问题
