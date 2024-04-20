@@ -1,3 +1,10 @@
+const autometa_options = {
+  site: {
+    name: 'Sean Li'
+  },
+  canonical_base: 'https://makabaka1880.xyz',
+};
+
 module.exports = {
   configureWebpack: {
     resolve: {
@@ -7,12 +14,19 @@ module.exports = {
     }
   },
   plugins: [
+    ['sitemap', {
+        hostname: "https://makabaka1880.xyz",
+        // 排除无实际内容的页面
+        exclude: ["/404.html"]
+      }
+    ],
+    ['autometa', autometa_options],
     [
       '@vssue/vuepress-plugin-vssue',
       {
         platform: 'github',
         owner: 'makabaka1880',
-        repo: 'makabaka1880.github.io',
+        repo: 'makabaka1880.xyz',
         clientId: '71e3010f2012a5e26f29',
         clientSecret: 'cb78aa8edf3233527277ed8e95c3fb942c9649b9',
       }
