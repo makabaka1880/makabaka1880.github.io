@@ -87,7 +87,7 @@ module.exports = {
         text: "其他账号",
         link: "/",
         items: [
-          { text: "GitHub", link: "https://github.com/makabaka1880/makabaka1880.github.io" },
+          { text: "GitHub", link: "https://github.com/makabaka1880/makabaka1880.git" },
           { text: "知乎", link: "https://www.zhihu.com/people/makabaka1880" }
         ]
       },
