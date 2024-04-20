@@ -14,7 +14,7 @@ cd docs/.vuepress/dist
 touch CNAME # Custom Domain
 echo "makabaka1880.xyz" > CNAME # Write custom domain
 git init
-git remote add origin git@github.com:makabaka1880/makabaka1880.github.io.git
+git remote add origin git@github.com:makabaka1880/makabaka1880.git
 git add -A
 echo "ready to deploy"
 git commit -m 'deploy'

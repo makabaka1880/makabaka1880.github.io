@@ -17,6 +17,7 @@ actionLink: /CS/Casio
 ::: warning Updated @ Apr 20
 Changelog
 ---
+- **Repo名更改**更改至[makabaka1880/makabaka1880](https://github.com/makabaka1880/makabaka1880.git)
 - **域名搬迁** 搬迁至[这里](https://makabaka1880.xyz)
 - **UI更改** 添加BugFix栏
 - **添加SEO** 
