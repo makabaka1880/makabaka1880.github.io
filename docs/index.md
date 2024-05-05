@@ -14,6 +14,10 @@ actionText: 计算机科学 · 卡西欧炸机记 →
 actionLink: /CS/Casio
 ---
 
+::: warning 全站通知
+最近可能博客更新不会很快 哮喘+肺炎直接血氧89心率145干进抢救室了（悲
+:::
+
 ::: warning Updated @ Apr 20
 Changelog
 ---
@@ -24,6 +28,7 @@ Changelog
   - 添加了`Sitemap`
   - 添加了`Metadata`
 BugFix 
+- **Daily note update**
 ---
 - **🐛** 修改了[``sitemap.xml``](https://makabaka1880.xyz/sitemap.xml)中的`hostname`
 - **🐛** 修复了因为搬迁后域名(https://makabaka1880.xyz)与`Vssue`注册的`OAuth App`中`Homepage URL`和`Authorization callback URL`(https://makabaka1880.github.io)冲突的问题

@@ -1,7 +1,7 @@
 # 博弈论笔记
 这个也是我的英文阅读笔记
 
-::: warning Updated @ Apr 10
+::: warning Updated @ Mar 5
 Changelog
 ---
 - **Daily note update** [Baysesian games](#26-bayesian-games-strategic-games-with-imperfect-information)
