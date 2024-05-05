@@ -1,4 +1,6 @@
 # NeoVim
+> 感谢[Tim同学](https://github.com/BIGGASSS)的contribution
+
 [[toc]]
 这就是我们熟悉的是`vim`.
 ![Installation](/static/GoodLibs/nvim/vim.png)

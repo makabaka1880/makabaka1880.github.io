@@ -334,4 +334,31 @@ The preference relation $\succsim^*_{(i, t_i)}$ of each player $(i, t_i)$ is def
 $$a^* \succsim^*_{(i, t_i)} b^*  \longleftrightarrow L_i(a^*, t_i) \succsim^*_{(i, t_i)} L_i(b^*, t_i)$$
 where $L_i(a^*, t_i)$ is the lottery over $A \times \Omega$ that assigns Bayes factor $\frac{p_i(\omega)}{p_i(\tau_i^{-1}(t_i))}$ to $((a^*(j, \tau_j(\omega)))_{j\in N}, \omega)$ if $\omega \in \tau_i^{-1}(t_i)$, $0$ otherwise.
 :::
+#### 2.6.2 Examples
+##### Second-price auction
+::: tip Scenario
+An object is to be assigned to a player in the set ${1, . . . , n}$ in exchange for a payment. Player $i$’s valuation of the object is $v_i$, and $v_1 > v_2 > ... > v_n > 0$. The mechanism used to assign the object is a (sealed-bid) auction: the players simultaneously submit bids (nonnegative numbers), and the object is given to the player with the lowest index among those who submit the highest bid, in exchange for a payment.
+In a first price auction the payment that the winner makes is the price that he bids.
+In a second price auction the payment that the winner makes is the highest bid among those submitted by the players who do not win (so that if only one player submits the highest bid then the price paid is the second highest bid).
+Now consider a variant of the second-price sealed-bid auction described above in which each player $i$ knows his own valuation $v_i$ but is uncertain of the other players’ valuations. Specifically, suppose that the set of possible valuations is the finite set $V$ and each player believes that every other player’s valuation is drawn independently from the same distribution over $V$.
+Then this situation, as a Bayesian game, is
+- the set $N$ of players, $\left\{1, ..., n\right\}$
+- The set $\Omega$ of states, $V^n$(profiles of valuation)
+- the set $A$ of actions, $\mathbb R_+$
+- the set $T_i$ of signals $i$ can recieve, $V$
+- the signal function $\tau_i$ of $i$, $\tau_i \left(v_1, ..., v_n \right) = v_i$
+- the prior belief $p_i$ of $i$ is given $p_i\left(v_1, ..., v_n\right) = \Pi^{n}_{j=1} \pi(v_j)$ for some distribution $\pi$ over $V$
+- player $i$'s preference relation $\succsim_i$ is the expectation of the random variable whose value in state $\left(v_1, ..., v_n\right)$ is $v_i-\max_{j\in N \backslash \left\{i \right\}}{a_j}$ if $i$ is the player with the lowest index for whom $a_i \geq a_j \forall j\in N$ and $0$ otherwise
+This game has a Nash equilibrium, namely $a^*$ in which $a^*(i, v_i) = v_i$ for any player $i \in N$ and $v \in V = t_i$ (Bidding one's valuation).
+:::
+
+#### 2.6.3 Comments on the model
+The model's captured the player's uncertainty by a probability measure over some set of states as proposed by Harsanyi. He assumed that tthe prior belief of every player is the same, and that all differences should be deried from an objective mechanism that assigns information to each player. 
+In previous sections we have shown that the assumption of a common prior beliefs "has strong implications for the relationship between the players’ posterior beliefs." For example, "after a pair of players receive their signals it cannot be “common knowledge” between them that player 1 believes the probability that the state of nature is in some given set to be $\alpha$ and that player 2 believes this probability to be $\beta \neq \alpha$, though it is possible that player 1 believes the probability to be $\alpha$, player 2 believes it to be $\beta$, and one of them is unsure about the other’s belief."
+
+A payesian game can also be uysed to model situations where players are uncertain about other's knowledge of a state.
+
+For example, a Bayesian game in which the set of players is ${1, 2}$ and states $\Omega = {\omega_1, \omega_2, \omega_3}$, and each player assigns probability $\frac{1}{3}$ to each state, and the signal function for $1$ and $2$ were $\tau_1(\omega_1) = \tau_1(\omega_2) = t_1', \tau_1(\omega_3) = t_1''$ and $\tau_2(\omega_1) = t_2', \tau_2(\omega_3)  = \tau_2(\omega_2) = t_2''$. Now we assume that player $1$'s preferences satisfy $(b, \omega_j) \succ_1(c, \omega_j)$ for $j = 1, 2 and $(c, \omega_j) \succ_1 (b, \omega_j)$ for any action profile $b$ and $c$ while player $2$ is indifferent between all the pairs $(a, \omega)$. In such state $\omega_1$ player $2$ knows that player $1$ prefers $b$ over $c$, but in $\omega_2$ no. Since in $\omega_1$ player $1$ doesn't know which state it is, so she doesn't know whether
+1. Player $2$ knows that she prefers $b$ to $c$ or
+2. Player $2$ is not sure about her preference between $b$ and $c$
 <Vssue/>
