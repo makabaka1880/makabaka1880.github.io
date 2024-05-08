@@ -1,10 +1,10 @@
 # 博弈论笔记
 这个也是我的英文阅读笔记
 
-::: warning Updated @ Mar 5
+::: warning Updated @ Mar 8
 Changelog
 ---
-- **Daily note update** [Baysesian games](#26-bayesian-games-strategic-games-with-imperfect-information)
+- **Daily note update** [Mixed, Correlated, and Evolutionary Equilibrium](#31-mixed-strategy-nash-equilibrium)
 :::
 [[toc]]
 
@@ -361,4 +361,17 @@ A payesian game can also be uysed to model situations where players are uncertai
 For example, a Bayesian game in which the set of players is ${1, 2}$ and states $\Omega = {\omega_1, \omega_2, \omega_3}$, and each player assigns probability $\frac{1}{3}$ to each state, and the signal function for $1$ and $2$ were $\tau_1(\omega_1) = \tau_1(\omega_2) = t_1', \tau_1(\omega_3) = t_1''$ and $\tau_2(\omega_1) = t_2', \tau_2(\omega_3)  = \tau_2(\omega_2) = t_2''$. Now we assume that player $1$'s preferences satisfy $(b, \omega_j) \succ_1(c, \omega_j)$ for $j = 1, 2 and $(c, \omega_j) \succ_1 (b, \omega_j)$ for any action profile $b$ and $c$ while player $2$ is indifferent between all the pairs $(a, \omega)$. In such state $\omega_1$ player $2$ knows that player $1$ prefers $b$ over $c$, but in $\omega_2$ no. Since in $\omega_1$ player $1$ doesn't know which state it is, so she doesn't know whether
 1. Player $2$ knows that she prefers $b$ to $c$ or
 2. Player $2$ is not sure about her preference between $b$ and $c$
+
+It's tempting to expand the range of situations we can model where all payers are uncertain about each other's knowledge of other's using a Bayesian game. We assume that all player's payoffs only depends on a parameter $\theta \in \Theta$. Denoting the set of possible beliefs of each player $i$ by $X_i$, then the belief of any player of any player is the probability distribution over $\Theta \times X_{-j}$ That implies that the belief of one player depends on other's beliefs. Therefore, the answer to the question we posed is not trivial, and it is equivalent to the question of finding a collection $\left\{X_j\right\}_{j\in N}$ so that $\forall i \in N$ the set $X_i$ is isomorphic to $\Theta \times X_{-i} $/. Is so, then it is possible to let $\Omega = \Theta \times (\times_{i\in N} X_i)$ to be the state space and use this model to capture the player's uncertainty not only of other's payoffs but also other's beliefs.
+
+
+## Chapter 3: Mixed, Correlated, and Evolutionary Equilibrium
+
+This chapter two concepts of equilibrium are discussed: A mixed strategic Nash equilibrium and correlated equilibrium. There will also be discussion on a variant of Nash equilibrium design to model the outcome of an evolutionary process.
+
+### 3.1 Mixed Strategy Nash Equilibrium
+
+This is design to model a steady state of the game when the participants' choices are not deterministic but are regulated by probabilistic rules. In previous chapters we had defined that a strategic game to be a tripple $\langle N, (A_i), (\succsim_i)\rangle$, where $\succsim_i$ of each player $i$ is defined over the set $A = \times_{i \In N} A_i$ of action profiles. In this chapter we allow the players' choice to be nondeterminstic. This leads to the need to add to the primitives of a model a specification of each player's preference relation over *lotteries* on $A$. Therefore, we assume that the preference relation of each plauer $i$ satisfies the assumptions of von Neumann and Morgenstern so that it can be represented by the expected value of some function $u_i: A \to \mathbb R$. Therefore, we can update our model to $\langle N, (A_i), (u_i)\rangle$. This function $u_i$ "represents player i’s preferences over the set of lotteries on A". Netherless, this is still a strategic game.
+
+Now let $G = \langle N, (A_i), (u_i)\rangle$. Now we denote with $\Delta(A_i)$ the set of probability distributions over $A_i$ and refer to a memeber of $\Delta(A_i)$ as a **mixed strategy** of player $i$, and that we assume that players' mixed strategies are independent randomizations. For clarity, we sometimes refer to a member of $A_i$ as a **pure strategy**. For any finite set $X$ and $\delta \in \Delta(X)$ we denote by $\delta(x)$ the probability that $\delta$ assigns to $x \in X$ and define the *support of $delta$ to be the set of elements $x \in X$ for which $\delta(x) > 0$.
 <Vssue/>
