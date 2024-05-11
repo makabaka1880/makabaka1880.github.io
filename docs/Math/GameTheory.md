@@ -1,7 +1,7 @@
 # 博弈论笔记
 这个也是我的英文阅读笔记
 
-::: warning Updated @ Mar 8
+::: warning Updated @ Mar 11
 Changelog
 ---
 - **Daily note update** [Mixed, Correlated, and Evolutionary Equilibrium](#31-mixed-strategy-nash-equilibrium)

@@ -18,7 +18,7 @@ actionLink: /CS/Casio
 最近可能博客更新不会很快 哮喘+肺炎直接血氧89心率145干进抢救室了（悲
 :::
 
-::: warning Updated @ Mar 5
+::: warning Updated @ Mar 11
 Changelog
 ---
 - **Daily note update** 
